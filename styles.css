@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    padding: 30px;
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+header {
+   
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    position: sticky;
+    height: 100px;
+    top: 0px;
+    box-shadow: 0px 10px 10px rgb(147, 147, 147, .5);
+}
+
+nav > ul {
+    top: 5px;
+    display: flex;
+    background: white;
+    z-index: 1;
+}
+
+nav > ul > li {
+    list-style: none;
+    padding: 12px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+nav > ul > li > a{
+    text-decoration: none;
+    color: black;
+}
+
+nav > ul > li > a:hover {
+    cursor: pointer;
+}
+
+.dec {
+    height: 1px;
+    width: 100vw;
+    background: black;
+    position: absolute;
+}
+
+.page__container {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    padding: 100px;
+}
+
+/* article */
+.article {
+    padding: 0 10px;
+}
+
+.article > h2 {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 2rem;
+    padding: 0 0 20px 0;
+}
+
+.article > p {
+    font-size: 1.3rem;
+}
+
+
+/* heroes */
+#index__hero {
+    height: 553px;
+    width: 884px;
+    background: url("index__hero.jpg");
+    background-size: cover;
+    margin: 20px auto;
+}
+
+#about__us__hero {
+    height: 553px;
+    width: 332px;
+    background: url("about__us__hero.gif");
+    background-size: cover;
+}
+
+#about__coaching__hero {
+    height: 553px;
+    width: 332px;
+    background: url("about__coaching__hero.gif");
+    background-size: cover;
+}
